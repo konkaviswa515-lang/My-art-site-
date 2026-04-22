@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE__ART__DUDE | Art & Commissions</title>
+    <style>
+        /* CSS DESIGN SECTION */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1a; 
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('header-bg.jpg') center/cover; 
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #ff4757;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: #252525;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services-container {
+            max-width: 1100px;
+            margin: 30px auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            padding: 25px;
+            border: 1px solid #444;
+            border-radius: 12px;
+            transition: 0.3s;
+            background: #1e1e1e;
+        }
+
+        .service-item:hover {
+            border-color: #ff4757;
+            transform: translateY(-5px);
+        }
+
+        .service-item h4 {
+            color: #ff4757;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .special-service {
+            border: 2px solid #ff4757;
+            background: rgba(255, 71, 87, 0.1);
+        }
+
+        /* Gallery Grid */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #ff4757;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .art-card {
+            background: #2d3436;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .art-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 71, 87, 0.3);
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Footer & Contact Form */
+        footer {
+            background: #000;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 550px;
+            margin: 40px auto 0;
+            text-align: left;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input, 
+        .contact-form select, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background: #2d3436;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: #ff4757;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #ff6b81;
+            transform: scale(1.02);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .services-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>THE__ART__DUDE</h1>
+        <p>Professional Art Portfolio & Commissions</p>
+    </header>
+
+    <section class="services-section">
+        <h2 class="section-title">My Specialties</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h4>Pencil Arts</h4>
+                <p>Detailed graphite & charcoal portraits</p>
+            </div>
+            <div class="service-item">
+                <h4>Fabric Painting</h4>
+                <p>Custom art on t-shirts, tote bags, or canvas</p>
+            </div>
+            <div class="service-item special-service">
+                <h4>Surprise Art + Video</h4>
+                <p>Get a custom artwork + a beautiful time-lapse video</p>
+            </div>
+            <div class="service-item">
+                <h4>Threading</h4>
+                <p>Unique thread-work & mixed media designs</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <center><h2 class="section-title">Recent Work</h2></center>
+        
+        <div class="art-grid">
+            <div class="art-card">
+                <img src="pencil.jpeg" alt="Artwork 1">
+                <div class="art-info">
+                    <h3>Pencil Portrait</h3>
+                    <p>Realistic Sketch</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="fabric.jpg" alt="Artwork 2">
+                <div class="art-info">
+                    <h3>Custom Denim</h3>
+                    <p>Fabric Painting</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="isro.jpeg" alt="Artwork 3">
+                <div class="art-info">
+                    <h3>pencil potrait</h3>
+                    <p>dr.v narayanan sir </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="peacock.jpeg" alt="Artwork 4">
+                <div class="art-info">
+                    <h3>peacock</h3>
+                    <p>acrylic painting </p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="potrait.jpeg" alt="Artwork 5">
+                <div class="art-info">
+                    <h3>realastic potrait </h3>
+                    <p>pencil sketch</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="thread.jpg" alt="Threaded artwork featuring colorful thread patterns and designs on fabric with intricate detail work">
+                <div class="art-info">
+                    <h3>Threaded Pattern</h3>
+                    <p>Fabric Threading</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="section-title">Commission Me</h2>
+        <p>Have an idea? Let's bring it to life!</p>
+        <p style="color: #ff4757; font-weight: bold; margin-top: 10px;">yourname@email.com</p>
+
+        <form action="https://formspree.io/f/xaqapgdn" method="POST" class="contact-form">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="John Doe" required>
+
+            <label>Your Email Address</label>
+            <input type="email" name="email" placeholder="example@mail.com" required>
+
+            <label>Interested In</label>
+            <select name="service">
+                <option value="Pencil Art">Pencil Art</option>
+                <option value="Fabric Painting">Fabric Painting</option>
+                <option value="Surprise Art + Video">Surprise Art + Video</option>
+                <option value="Threading">Threading</option>
+                <option value="Other">Other Custom Request</option>
+            </select>
+
+            <label>Project Details</label>
+            <textarea name="message" rows="4" placeholder="Tell me what you have in mind..." required></textarea>
+
+            <button type="submit" class="contact-btn">Send Inquiry</button>
+        </form>
+    </footer>
+
+</body>
+</html>
